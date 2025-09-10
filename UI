@@ -271,7 +271,7 @@ SNTS = {
 	TextColor = Color3.fromRGB(220, 220, 220),
 
 	-- Optional image background
-	BackgroundImage = "rbxassetid://99230029437895", 
+	BackgroundImage = "rbxassetid://108700890668070", 
 	Background = Color3.fromRGB(15, 15, 15), -- Fallback color if no image
 
 	Topbar = Color3.fromRGB(25, 25, 25),
@@ -672,28 +672,6 @@ elseif not useStudio then
 end
 
 
-
-local function setCustomTitle(gui)
-	local titleLabel = gui:FindFirstChild("Topbar", true)
-	if titleLabel and titleLabel:FindFirstChild("Title") then
-		titleLabel.Title.Text = "SNTS"
-	end
-end
-
--- Change Logo Image
-local function setCustomLogo(gui)
-	local topbar = gui:FindFirstChild("Topbar", true)
-	if topbar and topbar:FindFirstChild("Logo") then
-		topbar.Logo.Image = "rbxassetid://99230029437895"
-	end
-end
-
--- Apply customizations
-setCustomTitle(Rayfield)
-setCustomLogo(Rayfield)
-
-
-
 local minSize = Vector2.new(1024, 768)
 local useMobileSizing
 
@@ -704,7 +682,6 @@ end
 if UserInputService.TouchEnabled then
 	useMobilePrompt = true
 end
-
 
 
 -- Object Variables
@@ -1578,7 +1555,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	LoadingFrame.Subtitle.TextTransparency = 1
 
 	LoadingFrame.Version.TextTransparency = 1
-	LoadingFrame.Title.Text = Settings.LoadingTitle or "SNTS"
+	LoadingFrame.Title.Text = Settings.LoadingTitle or "Rayfield"
 	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "Interface Suite"
 
 	if Settings.LoadingTitle ~= "Rayfield Interface Suite" then
