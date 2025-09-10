@@ -271,7 +271,7 @@ SNTS = {
 	TextColor = Color3.fromRGB(220, 220, 220),
 
 	-- Optional image background
-	BackgroundImage = "rbxassetid://108700890668070", 
+	BackgroundImage = "rbxassetid://99230029437895", 
 	Background = Color3.fromRGB(15, 15, 15), -- Fallback color if no image
 
 	Topbar = Color3.fromRGB(25, 25, 25),
@@ -1612,7 +1612,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 					Title = "SNTS Interface",
 					Content = "Enjoying this UI library? Find it at https://discord.gg/snts",
 					Duration = 7,
-					Image = 4370033185,
+					Image = 99230029437895,
 				})
 			end
 		end)
